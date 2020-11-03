@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cssfd.css">
+  <head>
+    <meta charset="utf-8">
+    <title>Sale Calendar</title>
+    <style>
+      table.cal{
+        height:50%;
+      	color:#06425C;
+      	border-spacing: 0;
+      	border: 3px solid black;
+      }
+      .cal caption{
+        font-family: 'Domine', serif;
+        padding-top:7px;
+        padding-bottom: 5px;
+      	text-transform: uppercase;
+      	background-color: #f2a043;
+      	color:#ffffff;
+      	font-size: 150%;
+      }
+
+      .cal th, .cal td{
+        padding-top:5px;
+      	padding-bottom: 5px;
+      }
+      th{
+        font-family: 'Domine', serif;
+      	text-align: center;
+      	background: #FFFFFF;
+      }
+      .cal th, .date td{
+        text-align:center;
+        width:130px;
+      }
+      .salespace{
+      	height:100px;
+        vertical-align:top;
+        margin:0;
+      }
+      .old{
+      	padding:0;
+      	margin: 0;
+      	color:rgba(0,0,0,.25);
+        background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/holiday.png");
+      }
+      #old{
+        background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/holiday.png");
+      }
+      #sale1{
+        margin-left:116px;
+        margin-bottom:5px;
+        padding: 3px 0;
+        font-size:13px;
+        background-color: #F9F8DB;
+        border-radius:4px;
+      }
+      #sale1-3week{
+        width:116px;
+        margin-bottom:5px;
+        padding: 3px 0;
+        font-size:13px;
+        background-color: #F9F8DB;
+        border-radius:4px;
+      }
+      #sale2, #sale2-2week, #sale2-3week, #sale2-4week, #sale2-5week{
+        padding: 3px 0;
+        margin-bottom:5px;
+        font-size:13px;
+        background-color: #E2F7ED;
+        border-radius:4px;
+      }
+      #sale2-1week{
+        height:17px;
+        padding: 3px 0;
+        margin-bottom:5px;
+        background-color: #E2F7ED;
+      }
+      #sale3, #sale3-4week, #sale3-5week{
+        padding: 3px 0;
+        margin-bottom:5px;
+        font-size:13px;
+        background-color: #FFDFE1;
+        border-radius:4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="primary-column">
+      <header class="border-bottom">
+        <h1>
+           <a href="home.html"><img src="img/logo.png"></a>
+        </h1>
+        <nav>
+          <div class="navbar box" style="background-color:black">
+            <a href="Home.html" class="button">FOOD TYPE</a>
+            <a href="location.html" class="button">LOCATION</a>
+            <a href="mypage.html" class="button">MY PAGE</a>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <h3>관심가게 세일 달력</h3>
+    <table class="cal" style="left:25%;top:30%;position:absolute">
+      <caption>June 2019</caption>
+      <thead>
+        <tr>
+                  <th>Sun</th>
+                  <th>Mon</th>
+                  <th>Tue</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+        </tr>
+          </thead>
+          <tbody>
+              <tr class="date">
+                    <td class="old">26</td>
+                    <td class="old">27</td>
+                    <td class="old">28</td>
+                    <td class="old">29</td>
+                    <td class="old">30</td>
+                    <td class="old">31</td>
+                    <td>1</td>
+              </tr>
+              <tr class="salespace">
+                <td id="old" colspan="6"><div id="sale2">[버거킹]올데이 세트 사딸라/4900원</div></td>
+                <td><div id="sale2-1week"></div></td>
+              </tr>
+              <tr class="date">
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr class="salespace">
+                  <td colspan="7"><div id="sale2-2week">[버거킹]올데이 세트 사딸라/4900원</div></td>
+                </tr>
+                <tr class="date">
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+                <tr class="salespace">
+                  <td colspan="7"><div id="sale1">[버거킹]와퍼주니어 1,900원</div>
+                  <div id="sale2-3week">[버거킹]올데이 세트 사딸라/4900원</div>
+                  <div id="sale3">[할리스커피] 8,000원 이상 구매하고 트래블 꿀템 Get Get!</div></td>
+                </tr>
+                <tr class="date">
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+              </tr>
+              <tr class="salespace">
+                    <td colspan="7"><div id="sale1-3week">[버거킹]와퍼주니..</div>
+                    <div id="sale2-4week">[버거킹]올데이 세트 사딸라/4900원</div>
+                    <div id="sale3-4week">[할리스커피] 8,000원 이상 구매하고 트래블 꿀템 Get Get!</div></td>
+              </tr>
+              <tr class="date">
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+               </tr>
+               <tr class="salespace">
+                    <td colspan="7"><div id="sale2-5week">[버거킹]올데이 세트 사딸라/4900원</div>
+                    <div id="sale3-5week">[할리스커피] 8,000원 이상 구매하고 트래블 꿀템 Get Get!</div></td>
+               </tr>
+          </tbody>
+      </table>
+  </body>
+</html>
